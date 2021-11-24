@@ -3,7 +3,7 @@
 @import 'main';
 
 body {
-  font-family: $raleway;
+  font-family: $raleway; 
 }
 .top {
   padding-top: 50px;
@@ -741,6 +741,7 @@ footer {
         &.open {
           transform: rotate(360deg);
           background-color: transparent;
+          position: fixed;
           &::before {
             transform: rotate(45deg) translate(5px, 8px);
           }
@@ -754,9 +755,9 @@ footer {
     nav {
       background-color: $clr-bg2;
       opacity: 98%;
-      position: absolute;
+      position: fixed;
       z-index: 1;
-      height: 100%;
+      height: 100vh;
       top:0;
       left:0;
       width: 100%;
